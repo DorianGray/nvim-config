@@ -1,0 +1,4 @@
+neobundle.vim
+syntastic
+unite.vim
+vim-fugitive
