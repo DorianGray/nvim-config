@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/dditthardt/src/woe-python-protocol/woe/protocol/command'
+let g:netrw_dirhist_2='/home/dditthardt/.config/awesome'
+let g:netrw_dirhist_3='/home/dditthardt/src/woe/woe/api/conf/dependency'
+let g:netrw_dirhist_4='/home/dditthardt/vm/address_verification/test/integration/controller/verification'

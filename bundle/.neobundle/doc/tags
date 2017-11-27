@@ -67,6 +67,13 @@
 :NeoBundleUpdate	neobundle.txt	/*:NeoBundleUpdate*
 :NeoBundleUpdate!	neobundle.txt	/*:NeoBundleUpdate!*
 :NeoBundleUpdatesLog	neobundle.txt	/*:NeoBundleUpdatesLog*
+:RustEmitAsm	rust.txt	/*:RustEmitAsm*
+:RustEmitIr	rust.txt	/*:RustEmitIr*
+:RustExpand	rust.txt	/*:RustExpand*
+:RustFmt	rust.txt	/*:RustFmt*
+:RustFmtRange	rust.txt	/*:RustFmtRange*
+:RustPlay	rust.txt	/*:RustPlay*
+:RustRun	rust.txt	/*:RustRun*
 :SyntasticCheck	syntastic.txt	/*:SyntasticCheck*
 :SyntasticInfo	syntastic.txt	/*:SyntasticInfo*
 :SyntasticReset	syntastic.txt	/*:SyntasticReset*
@@ -75,6 +82,7 @@
 :Unite	unite.txt	/*:Unite*
 :UniteBookmarkAdd	unite.txt	/*:UniteBookmarkAdd*
 :UniteClose	unite.txt	/*:UniteClose*
+:UniteDo	unite.txt	/*:UniteDo*
 :UniteFirst	unite.txt	/*:UniteFirst*
 :UniteLast	unite.txt	/*:UniteLast*
 :UniteNext	unite.txt	/*:UniteNext*
@@ -123,6 +131,7 @@
 <Plug>(unite_toggle_mark_current_candidate_up)	unite.txt	/*<Plug>(unite_toggle_mark_current_candidate_up)*
 <Plug>(unite_toggle_transpose_window)	unite.txt	/*<Plug>(unite_toggle_transpose_window)*
 filter-overrides	syntastic.txt	/*filter-overrides*
+ft_rust.txt	rust.txt	/*ft_rust.txt*
 fugitive	fugitive.txt	/*fugitive*
 fugitive#head(...)	fugitive.txt	/*fugitive#head(...)*
 fugitive#statusline()	fugitive.txt	/*fugitive#statusline()*
@@ -132,6 +141,7 @@ fugitive-:Gblame	fugitive.txt	/*fugitive-:Gblame*
 fugitive-:Gbrowse	fugitive.txt	/*fugitive-:Gbrowse*
 fugitive-:Gcd	fugitive.txt	/*fugitive-:Gcd*
 fugitive-:Gcommit	fugitive.txt	/*fugitive-:Gcommit*
+fugitive-:Gdelete	fugitive.txt	/*fugitive-:Gdelete*
 fugitive-:Gdiff	fugitive.txt	/*fugitive-:Gdiff*
 fugitive-:Ge	fugitive.txt	/*fugitive-:Ge*
 fugitive-:Gedit	fugitive.txt	/*fugitive-:Gedit*
@@ -180,6 +190,7 @@ fugitive-statusline	fugitive.txt	/*fugitive-statusline*
 fugitive-y_CTRL-G	fugitive.txt	/*fugitive-y_CTRL-G*
 fugitive-~	fugitive.txt	/*fugitive-~*
 fugitive.txt	fugitive.txt	/*fugitive.txt*
+g:ftplugin_rust_source_path	rust.txt	/*g:ftplugin_rust_source_path*
 g:neobundle#cache_file	neobundle.txt	/*g:neobundle#cache_file*
 g:neobundle#default_options	neobundle.txt	/*g:neobundle#default_options*
 g:neobundle#default_site	neobundle.txt	/*g:neobundle#default_site*
@@ -197,6 +208,21 @@ g:neobundle#types#hg#command_path	neobundle.txt	/*g:neobundle#types#hg#command_p
 g:neobundle#types#hg#default_protocol	neobundle.txt	/*g:neobundle#types#hg#default_protocol*
 g:neobundle#types#raw#calc_hash_command	neobundle.txt	/*g:neobundle#types#raw#calc_hash_command*
 g:neobundle#types#svn#command_path	neobundle.txt	/*g:neobundle#types#svn#command_path*
+g:rust_bang_comment_leader	rust.txt	/*g:rust_bang_comment_leader*
+g:rust_clip_command	rust.txt	/*g:rust_clip_command*
+g:rust_conceal	rust.txt	/*g:rust_conceal*
+g:rust_conceal_mod_path	rust.txt	/*g:rust_conceal_mod_path*
+g:rust_conceal_pub	rust.txt	/*g:rust_conceal_pub*
+g:rust_fold	rust.txt	/*g:rust_fold*
+g:rust_playpen_url	rust.txt	/*g:rust_playpen_url*
+g:rust_recommended_style	rust.txt	/*g:rust_recommended_style*
+g:rust_shortener_url	rust.txt	/*g:rust_shortener_url*
+g:rustc_makeprg_no_percent	rust.txt	/*g:rustc_makeprg_no_percent*
+g:rustc_path	rust.txt	/*g:rustc_path*
+g:rustfmt_autosave	rust.txt	/*g:rustfmt_autosave*
+g:rustfmt_command	rust.txt	/*g:rustfmt_command*
+g:rustfmt_fail_silently	rust.txt	/*g:rustfmt_fail_silently*
+g:rustfmt_options	rust.txt	/*g:rustfmt_options*
 g:unite_abbr_highlight	unite.txt	/*g:unite_abbr_highlight*
 g:unite_converter_file_directory_width	unite.txt	/*g:unite_converter_file_directory_width*
 g:unite_cursor_line_time	unite.txt	/*g:unite_cursor_line_time*
@@ -219,6 +245,7 @@ g:unite_matcher_fuzzy_max_input_length	unite.txt	/*g:unite_matcher_fuzzy_max_inp
 g:unite_no_default_keymappings	unite.txt	/*g:unite_no_default_keymappings*
 g:unite_quick_match_table	unite.txt	/*g:unite_quick_match_table*
 g:unite_redraw_hold_candidates	unite.txt	/*g:unite_redraw_hold_candidates*
+g:unite_restore_alternate_file	unite.txt	/*g:unite_restore_alternate_file*
 g:unite_source_alias_aliases	unite.txt	/*g:unite_source_alias_aliases*
 g:unite_source_bookmark_directory	unite.txt	/*g:unite_source_bookmark_directory*
 g:unite_source_buffer_time_format	unite.txt	/*g:unite_source_buffer_time_format*
@@ -231,6 +258,7 @@ g:unite_source_grep_default_opts	unite.txt	/*g:unite_source_grep_default_opts*
 g:unite_source_grep_encoding	unite.txt	/*g:unite_source_grep_encoding*
 g:unite_source_grep_recursive_opt	unite.txt	/*g:unite_source_grep_recursive_opt*
 g:unite_source_grep_search_word_highlight	unite.txt	/*g:unite_source_grep_search_word_highlight*
+g:unite_source_grep_separator	unite.txt	/*g:unite_source_grep_separator*
 g:unite_source_line_enable_highlight	unite.txt	/*g:unite_source_line_enable_highlight*
 g:unite_source_menu_menus	unite.txt	/*g:unite_source_menu_menus*
 g:unite_source_output_shellcmd_colors	unite.txt	/*g:unite_source_output_shellcmd_colors*
@@ -372,6 +400,13 @@ neobundle-unite-sources	neobundle.txt	/*neobundle-unite-sources*
 neobundle-usage	neobundle.txt	/*neobundle-usage*
 neobundle-variables	neobundle.txt	/*neobundle-variables*
 neobundle.txt	neobundle.txt	/*neobundle.txt*
+rust	rust.txt	/*rust*
+rust-commands	rust.txt	/*rust-commands*
+rust-intro	rust.txt	/*rust-intro*
+rust-mappings	rust.txt	/*rust-mappings*
+rust-settings	rust.txt	/*rust-settings*
+rust_<D-R>	rust.txt	/*rust_<D-R>*
+rust_<D-r>	rust.txt	/*rust_<D-r>*
 syntastic	syntastic.txt	/*syntastic*
 syntastic-about	syntastic.txt	/*syntastic-about*
 syntastic-aggregating-errors	syntastic.txt	/*syntastic-aggregating-errors*
@@ -489,6 +524,10 @@ unite-create-filter	unite.txt	/*unite-create-filter*
 unite-create-kind	unite.txt	/*unite-create-kind*
 unite-create-source	unite.txt	/*unite-create-source*
 unite-default-action	unite.txt	/*unite-default-action*
+unite-denite	unite.txt	/*unite-denite*
+unite-denite-action-unite	unite.txt	/*unite-denite-action-unite*
+unite-denite-kind-unite	unite.txt	/*unite-denite-kind-unite*
+unite-denite-source-unite	unite.txt	/*unite-denite-source-unite*
 unite-deprecated-variables	unite.txt	/*unite-deprecated-variables*
 unite-examples	unite.txt	/*unite-examples*
 unite-external-sources	unite.txt	/*unite-external-sources*
@@ -508,6 +547,8 @@ unite-filter-converter_relative_word	unite.txt	/*unite-filter-converter_relative
 unite-filter-converter_smart_path	unite.txt	/*unite-filter-converter_smart_path*
 unite-filter-converter_tail	unite.txt	/*unite-filter-converter_tail*
 unite-filter-converter_tail_abbr	unite.txt	/*unite-filter-converter_tail_abbr*
+unite-filter-converter_uniq_word	unite.txt	/*unite-filter-converter_uniq_word*
+unite-filter-converter_word_abbr	unite.txt	/*unite-filter-converter_word_abbr*
 unite-filter-matcher_context	unite.txt	/*unite-filter-matcher_context*
 unite-filter-matcher_default	unite.txt	/*unite-filter-matcher_default*
 unite-filter-matcher_fuzzy	unite.txt	/*unite-filter-matcher_fuzzy*
@@ -579,6 +620,7 @@ unite-options-create	unite.txt	/*unite-options-create*
 unite-options-cursor-line-time	unite.txt	/*unite-options-cursor-line-time*
 unite-options-default-action	unite.txt	/*unite-options-default-action*
 unite-options-direction	unite.txt	/*unite-options-direction*
+unite-options-file-quit	unite.txt	/*unite-options-file-quit*
 unite-options-force-immediately	unite.txt	/*unite-options-force-immediately*
 unite-options-force-redraw	unite.txt	/*unite-options-force-redraw*
 unite-options-here	unite.txt	/*unite-options-here*

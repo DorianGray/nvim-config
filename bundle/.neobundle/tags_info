@@ -1,4 +1,5 @@
 neobundle.vim
+rust.vim
 syntastic
 unite.vim
 vim-fugitive
